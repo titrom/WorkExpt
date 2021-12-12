@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graf"
+    app:startDestination="@id/listCharactersFragment">
+    <fragment
+        android:id="@+id/listCharactersFragment"
+        android:name="com.example.workexpt.view.Fragments.ListCharactersFragment"
+        android:label="ListCharactersFragment" >
+        <action
+            android:id="@+id/action_listCharactersFragment_to_profileSuperheroFragment"
+            app:destination="@id/profileSuperheroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileSuperheroFragment"
+        android:name="com.example.workexpt.view.Fragments.ProfileSuperheroFragment"
+        android:label="ProfileSuperheroFragment" >
+        <action
+            android:id="@+id/action_profileSuperheroFragment_to_listCharactersFragment"
+            app:destination="@id/listCharactersFragment" />
+    </fragment>
+</navigation>
